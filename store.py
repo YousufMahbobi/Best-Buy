@@ -1,4 +1,3 @@
-import products
 from validation import Validation
 
 class Store:

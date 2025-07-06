@@ -31,6 +31,23 @@ class Validation:
         if requested_quantity > available_quantity:
             raise ValueError('Requested quantity cannot be greater than available quantity')
 
+    @staticmethod
+    def validate_user_menu_option(menu_option):
+        if 0 < menu_option < 5:
+            raise ValueError('Menu option must be between 1 and 4')
+
+    @staticmethod
+    def is_number(prompt):
+            try:
+                user_input = int(input(prompt))
+                return user_input
+            except ValueError:
+                print('Error with your choice! Try again!')
+
+
+
+
+
 
 
 

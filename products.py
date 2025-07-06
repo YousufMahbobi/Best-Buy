@@ -47,3 +47,4 @@ class Product:
     def check_and_deactivate_product_out_of_stock(self):
         if self.quantity == 0:
             self.deactivate()
+
